@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
+/* GERAL */
+
+  
+
+:root {
+    --laranja-claro : #F28705;
+    --laranja-escuro: #F27405;
+    --cor-preto: #0D0D0D;
+    --cor-cinza:#A6A6A6 ;
+    --cor-azul :#3A5D8C ;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.site {
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+hr {
+    width: 80px;
+    height: 4px;
+    background-color: #000;
+    border: none;
+}
+
+h2 {
+    font-family: "Lobster", sans-serif;
+    line-height: 70px;
+    font-size: 35pt;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Lobster", sans-serif;
+    font-size: 25pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: "Lobster", sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ESPECIFICO */
+
+header {
+    width: 100%;
+    background: #3A5D8C50;
+}
+
+header .site {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header h1 {
+    width: 172px;
+    height: 100px;
+    background: url('../img/logo.png');
+    background-size: 100% 100%;
+    text-indent:  -9999px;
+    margin: 5px 0;
+
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    font-family: "Anton", sans-serif;
+    font-size: 20pt;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 5px;
+    text-transform: uppercase;
+}
+
+header ul li.active {
+    border-bottom: 2px solid var(--laranja-claro) ;
+    border-right: 2px solid var(--laranja-claro);
+} 
+
+header ul li a {
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+
+header ul li a:hover {
+    color: var(--laranja-escuro);
+}
+
+header button {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border: 0;
+}
+
+header button i {
+    font-size: 40px;
+    color: var(--laranja-claro);
+}
+
+header button i:hover {
+    color: var(--cor-azul);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 620px;
+    background: lightgray;
+}
+
+.banner div {
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner h2 {
+    position: relative;
+    top: -60%;
+    line-height: 100px;
+}
+
+.banner .slick-prev {
+    left: 25px;
+    z-index: 999;
+}
+
+.banner .slick-next {
+    right: 25px;
+    z-index: 999;
+}
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+    font-size: 35px;
+    opacity: 0.50;
+    color: var(--laranja-escuro);
+}
+
+
+.banner .slick-dots {
+    bottom: 25px;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    
+}
+
+.servico {
+    padding: 40px 0;
+}
+
+
+.servico .site {
+    margin: 0 auto;
+
+}
+
+.servico .conteudoServico {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.servico .conteudoServico div {
+   width: 370px;
+   height: 580px;
+   text-align: center;
+  border: 2px solid var(--laranja-escuro);
+}
+
+.servico img {
+    width: 100%;
+    height: 240px;
+}
+
+.servico h3 {
+    font-size: 25pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Lobster", sans-serif;
+}
+
+.servico p {
+    font-family: "Anton", sans-serif;
+    margin-top: 20px;
+    font-size: 15pt;
+    color: var(--cor-preto);
+}
+
+.sobre {
+    height: 730px;
+}
+
+.sobre .site {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.sobre img {
+    width: 50%;
+    height: 100%;
+    background-color: #868585;
+}
+
+.sobre p {
+    font-family: "Anton", sans-serif;
+    margin: 50px;
+    font-size: 18pt;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.equipe {
+    padding: 40px 0;
+}
+ 
+.equipe .site {
+    margin: 0 auto;
+}
+ 
+.equipe .site .conteudoEquipe .itemEquipe:hover {
+    background-color: #3A5D8C10;
+    border-radius: 50px;
+}
+
+.conteudoEquipe {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+ 
+.itemEquipe {
+    display: flex;
+    margin-bottom: 30px;
+}
+ 
+.itemEquipe img {
+    width: 300px;
+    height: 200px;
+    background-color:#868585;
+}
+ 
+.itemEquipe h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+ 
+.itemEquipe h4 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background: #000;
+    padding-top: 40px;
+}
+
+footer .site {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    min-width: 60px;
+    min-height: 60px;
+    background: #3f3f3f;
+    margin:0 20px ;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15pt;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer div {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+footer nav {
+    width: 50%;
+    display: flex;
+}
+
+footer p {
+    padding-top: 5px;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10pt;
+    color: #fff;
+    background: var(--laranja-claro);
+}
+
+/* media query */
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .banner {
+        height: 420px;
+    }
+    .banner h2 {
+        top:-67%;
+    }
+    .servico {
+        padding: 20px 0;
+    }
+    .servico .conteudoServico {
+        margin-top: 20px;
+    }
+    .servico p {
+        font-size: 12pt;
+    }
+    .sobre {
+        height: 430px;
+    }
+    .equipe {
+        padding: 20px 0;
+    }
+    /* */
+    .equipe img {
+        width: 250px;
+        height: 167px;
+    } 
+
+    .footer {
+        padding-top: 0;
+        width: 100%;
+    }
+    .itemEquipe h3, .itemEquipe h4 {
+        width: 236px !important;
+    }
+    
+/* media query 768px */
+
+@media (max-width: 768px){
+    .servico .conteudoServico div {
+        height: 400px; /* prof colocou 550px*/
+    }
+    .servico h3 {
+        font-size: 16pt;
+    }
+    .servico img {
+        height: 190px;
+    }
+    .servico p {
+        font-size: 12pt;
+    }
+    .sobre p {
+        margin: 20px;
+        font-size: 12pt;
+    }
+    .equipe .site .conteudoEquipe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipe .site .conteudoEquipe .itemEquipe {
+        width: 500px;
+    }
+    footer i {
+        font-size: 40px;
+        margin-left: 10px;
+        color: var(--laranja-claro);
+    }
+    footer nav {
+        width: 60%;
+    }
+}
+}
+
+   /* media query para 360px */
+   @media (max-width: 480px) {
+    header nav, header .loginNormal, .banner {
+        display: block;
+       } 
+   .servico .conteudoServico {
+        flex-direction: column; 
+        align-items: center;
+       }
+   .servico .conteudoServico div {
+       width: 90%;
+       height: 480px;
+       /* margin: 0 auto; */
+       }
+   .sobre .site p {
+       font-size: 11pt;
+   }
+   h2 {
+       font-size: 30pt;
+   }
+   header nav {
+    position: fixed;
+    background: var(--cor-azul);
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 50%;
+    z-index: 9999;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s ease-out;
+   }
+   header nav button:nth-child(1){
+    margin-right: auto;
+   }
+   header button {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--cor-azul);
+   }
+   header button i:hover {
+    cursor: pointer;
+    color: var(--cor-azul)
+   }
+   .menuAtivo header nav {
+    right: 0;
+   }
+   .equipe img{
+       width: 170px;
+       height: 120px;
+   }
+   .equipe .site .conteudoEquipe .itemEquipe {
+       width: 90%;
+   }
+   .equipe .site .conteudoEquipe .itemEquipe div {
+       margin-top: 0;
+   }
+   footer .site {
+       margin: 5px auto;
+   }
+   footer .site div {
+       width: 60%;
+   }
+   footer i {
+       margin: 20px 5px 20px 5px;
+   }
+   footer nav {
+       width: 40%;
+   }
+   footer ul {
+       flex-direction: column;
+   }
+   footer ul li {
+       margin: 0;
+   }
+    }
